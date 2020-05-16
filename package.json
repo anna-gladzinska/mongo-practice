@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "mocha --watch \"./{,!(node_modules)/**/}*.test.js\""
+    "test": "mocha \"./{,!(node_modules)/**/}*.test.js\"",
+    "test:watch": "onchange \"./**/*.js\" -i -k -- yarn test"
   },
   "dependencies": {
     "chai": "^4.2.0",
@@ -13,6 +14,7 @@
     "express": "^4.17.1",
     "mocha": "^7.1.2",
     "mongodb": "^3.5.7",
+    "mongodb-memory-server": "^6.6.0",
     "mongoose": "^5.9.13",
     "nodemon": "^1.19.1"
   }
