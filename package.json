@@ -16,6 +16,7 @@
     "mongodb": "^3.5.7",
     "mongodb-memory-server": "^6.6.0",
     "mongoose": "^5.9.13",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "onchange": "^7.0.2"
   }
 }
